@@ -1,15 +1,31 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
-import Header from '../components/Header';
+import Head from '../components/Head';
 import { Container, GlobalStyles } from '../components/styled-components';
+import { usePersonalData, useSiteMetadata } from '../hooks';
 import theme from '../theme';
 import 'normalize.css';
 
-export default () => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <Container>
-      <Header>Karol Falkiewicz</Header>
-    </Container>
-  </ThemeProvider>
-);
+export default () => {
+  const { name } = usePersonalData();
+  const { charSet, desciption, lang, robots, title } = useSiteMetadata();
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Container>
+          <Head />
+        </Container>
+      </ThemeProvider>
+      <Helmet>
+        <meta charSet={charSet} />
+        <meta name="description" content={desciption} />
+        <meta name="robots" content={robots} />
+        <html lang={lang} />
+        <title>{`${title} - ${name}`}</title>
+      </Helmet>
+    </>
+  );
+};

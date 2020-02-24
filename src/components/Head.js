@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { usePersonalData } from '../hooks';
 
 const Container = styled.header`
   margin-bottom: 2rem;
@@ -20,9 +21,13 @@ const Box = styled.div`
   background-color: ${props => props.theme.colors.base};
 `;
 
-export default ({ children }) => (
-  <Container>
-    <Box />
-    <Title>{children}</Title>
-  </Container>
-);
+export default () => {
+  const { name } = usePersonalData();
+
+  return (
+    <Container>
+      <Box />
+      <Title>{name}</Title>
+    </Container>
+  );
+};
