@@ -1,8 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import About from '../components/About';
 import Head from '../components/Head';
-import { Container, GlobalStyles } from '../components/styled-components';
+import {
+  Container,
+  Content,
+  GlobalStyles,
+} from '../components/styled-components';
 import { usePersonalData, useSiteMetadata } from '../hooks';
 import theme from '../theme';
 import 'normalize.css';
@@ -17,6 +22,9 @@ export default () => {
         <GlobalStyles />
         <Container>
           <Head />
+          <Content>
+            <About />
+          </Content>
         </Container>
       </ThemeProvider>
       <Helmet>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { usePersonalData } from '../hooks';
 
 const Container = styled.header`
-  margin-bottom: 2rem;
+  margin-bottom: ${props => props.theme.spacing.base};
   display: flex;
   align-items: center;
 `;

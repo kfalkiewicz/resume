@@ -5,6 +5,7 @@ const usePersonalData = () => {
     query MineData {
       allDataJson(filter: { name: { eq: "Karol Falkiewicz" } }) {
         nodes {
+          about
           name
         }
       }
