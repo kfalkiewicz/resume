@@ -20,7 +20,7 @@ export default () => {
         <article>
           <Title>{company}</Title>
           <SubTitle>{subtitle}</SubTitle>
-          <Description>{description}</Description>
+          {description && <Description>{description}</Description>}
         </article>
       );
     }

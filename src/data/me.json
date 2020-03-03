@@ -49,6 +49,22 @@
       "endDate": "04.2016",
       "current": false,
       "description": "This was my first front-end job ever. I became a part of IT department. I've worked on many Agora project i.a. forum.gazeta.pl, edziecko.pl. I've used HTML, CSS, SCSS, JS (ES5) and jQuery."
+    },
+    {
+      "company": "Cegedim SA",
+      "position": "QA Specialist",
+      "startDate": "09.2012",
+      "endDate": "09.2013",
+      "current": false,
+      "description": ""
+    },
+    {
+      "company": "Source Corp",
+      "position": "QA tester and User Support",
+      "startDate": "03.2011",
+      "endDate": "07.2012",
+      "current": false,
+      "description": ""
     }
   ],
   "education": [
