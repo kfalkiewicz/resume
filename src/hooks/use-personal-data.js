@@ -7,6 +7,20 @@ const usePersonalData = () => {
         nodes {
           about
           name
+          experience {
+            company
+            position
+            startDate
+            endDate
+            current
+            description
+          }
+          education {
+            school
+            title
+            startDate
+            endDate
+          }
         }
       }
     }

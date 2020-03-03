@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import About from '../components/About';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
 import Head from '../components/Head';
 import {
   Container,
@@ -24,6 +26,8 @@ export default () => {
           <Head />
           <Content>
             <About />
+            <Experience />
+            <Education />
           </Content>
         </Container>
       </ThemeProvider>

@@ -43,12 +43,21 @@ export const Container = styled.main`
 export const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(2, auto);
   grid-auto-flow: column;
   grid-column-gap: ${props => props.theme.spacing.base};
   grid-row-gap: ${props => props.theme.spacing.base};
-  /* column-count: 2;
-  column-fill: auto; */
+`;
+
+export const Title = styled.h3`
+  color: ${props => props.theme.colors.base};
+  font-size: ${props => props.theme.typography.fontSizes.lg};
+  font-weight: ${props => props.theme.typography.fontWeights.bold};
+`;
+
+export const SubTitle = styled.p`
+  color: ${props => props.theme.colors.secondary};
+  font-size: ${props => props.theme.typography.fontSizes.md};
 `;
 
 export const Text = styled.p`
