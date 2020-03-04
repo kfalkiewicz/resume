@@ -8,11 +8,16 @@ export default () => {
   const items = education.map(({ endDate, school, startDate, title }) => {
     const subtitle = `${startDate} - ${endDate} | ${title}`;
     return (
-      <article>
+      <article key={subtitle}>
         <Title>{school}</Title>
         <SubTitle>{subtitle}</SubTitle>
       </article>
     );
   });
-  return <Section title="Education">{items}</Section>;
+
+  return (
+    <Section title="Education" gridName="education">
+      {items}
+    </Section>
+  );
 };

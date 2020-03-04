@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Wrapper = styled.section`
+  grid-area: ${props => props.gridName};
+`;
+
 const SectionTitle = styled.h2`
   margin-bottom: ${props => props.theme.spacing.sm};
   color: ${props => props.theme.colors.section};
@@ -8,16 +12,16 @@ const SectionTitle = styled.h2`
   text-transform: uppercase;
   letter-spacing: 0.1em;
 `;
-const SectionContainer = styled.div`
+const Content = styled.div`
   display: grid;
   grid-row-gap: ${props => props.theme.spacing.sm};
 `;
 
-export default ({ children, title }) => (
-  <section>
+export default ({ children, gridName, title }) => (
+  <Wrapper gridName={gridName}>
     <header>
       <SectionTitle>{title}</SectionTitle>
     </header>
-    <SectionContainer>{children}</SectionContainer>
-  </section>
+    <Content>{children}</Content>
+  </Wrapper>
 );

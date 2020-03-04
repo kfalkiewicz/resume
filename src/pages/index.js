@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import About from '../components/About';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
+import Skills from '../components/Skills';
 import Head from '../components/Head';
 import {
   Container,
@@ -28,6 +29,7 @@ export default () => {
             <About />
             <Experience />
             <Education />
+            <Skills />
           </Content>
         </Container>
       </ThemeProvider>

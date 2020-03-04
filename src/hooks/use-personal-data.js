@@ -21,6 +21,7 @@ const usePersonalData = () => {
             startDate
             endDate
           }
+          skills
         }
       }
     }

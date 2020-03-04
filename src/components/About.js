@@ -7,7 +7,7 @@ export default () => {
   const { about } = usePersonalData();
 
   return (
-    <Section title="About me">
+    <Section title="About me" gridName="about">
       <Text>{about}</Text>
     </Section>
   );

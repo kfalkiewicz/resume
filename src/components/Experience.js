@@ -16,8 +16,9 @@ export default () => {
         ? `${startDate} - Present`
         : `${startDate} - ${endDate}`;
       const subtitle = `${dates} | ${position}`;
+
       return (
-        <article>
+        <article key={subtitle}>
           <Title>{company}</Title>
           <SubTitle>{subtitle}</SubTitle>
           {description && <Description>{description}</Description>}
@@ -25,5 +26,9 @@ export default () => {
       );
     }
   );
-  return <Section title="Experience">{items}</Section>;
+  return (
+    <Section title="Experience" gridName="experience">
+      {items}
+    </Section>
+  );
 };

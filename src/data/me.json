@@ -80,5 +80,25 @@
       "startDate": "2008",
       "endDate": "2012"
     }
+  ],
+  "skills": [
+    "React",
+    "Vue.js",
+    "Redux",
+    "Vuex",
+    "JS",
+    "JSS",
+    "styled-components",
+    "Next.js",
+    "Gatsby.js",
+    "HTML5",
+    "CSS",
+    "SCSS",
+    "PostCSS",
+    "webpack",
+    "GraphQL",
+    "Rest API",
+    "Git",
+    "Zeplin"
   ]
 }
