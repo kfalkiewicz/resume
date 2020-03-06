@@ -100,5 +100,11 @@
     "Rest API",
     "Git",
     "Zeplin"
-  ]
+  ],
+  "contact": {
+    "address": "Warsaw, Poland",
+    "email": "nosenation@gmail.com",
+    "phone": "+48506-943-762",
+    "url": "https://www.linkedin.com/in/karolf"
+  }
 }

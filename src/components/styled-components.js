@@ -43,12 +43,12 @@ export const Container = styled.main`
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, auto);
   grid-template-areas:
     'about experience'
     'education experience'
     'skills experience'
-    'contact experience';
+    'contact experience'
+    '. experience';
   grid-column-gap: ${props => props.theme.spacing.base};
   grid-row-gap: ${props => props.theme.spacing.base};
 `;

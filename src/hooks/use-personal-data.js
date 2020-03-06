@@ -22,6 +22,12 @@ const usePersonalData = () => {
             endDate
           }
           skills
+          contact {
+            address
+            email
+            phone
+            url
+          }
         }
       }
     }
