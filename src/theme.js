@@ -4,7 +4,6 @@ const theme = {
     secondary: '#68778d',
     section: '#8e9cb4',
     tagsBG: '#edf2f7',
-    light: '#ffffff',
   },
   spacing: {
     base: '2rem',
@@ -23,7 +22,6 @@ const theme = {
       xl: '1.5rem', // 24px
     },
     fontWeights: {
-      normal: '400',
       bold: '600',
     },
     lineHeight: '1.4',

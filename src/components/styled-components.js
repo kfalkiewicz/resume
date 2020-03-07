@@ -8,6 +8,9 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.typography.fontFamily};
     line-height: ${props => props.theme.typography.lineHeight};
     text-rendering: optimizeLegibility;
+    @media screen and (max-width: 1024px) {
+      font-size: calc(75% + 4 * (100vw - 320px) / 704);
+    }
   }
   body, h1, h2, h3, p, a {
     margin: 0;
@@ -33,16 +36,20 @@ export const Container = styled.main`
   max-width: 64.609375rem;
   padding: 4rem;
   margin: 0 auto;
-
   @media print {
     height: 77.04132rem;
     padding: 4rem;
+  }
+  @media screen and (max-width: 1023px) {
+    height: auto;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 2rem;
   }
 `;
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'about experience'
     'education experience'
@@ -51,6 +58,14 @@ export const Content = styled.div`
     '. experience';
   grid-column-gap: ${props => props.theme.spacing.base};
   grid-row-gap: ${props => props.theme.spacing.base};
+  @media screen and (max-width: 767px) {
+    grid-template-areas:
+      'about'
+      'experience'
+      'education'
+      'skills'
+      'contact';
+  }
 `;
 
 export const Title = styled.h3`
