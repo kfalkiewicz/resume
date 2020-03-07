@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: '/resume',
   siteMetadata: {
     charSet: 'utf-8',
     description: 'This is my personal resume created with gatsby.js',
