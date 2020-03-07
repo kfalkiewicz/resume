@@ -11,7 +11,7 @@ This repository contains source code of my personal resume. [Check here!](kfalki
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/kfalkiewicz/kfalkiewicz.github.io/master/static/screenshot1.png)
+![screenshot](https://raw.githubusercontent.com/kfalkiewicz/resume/master/screenshot.png)
 
 ## License
 
