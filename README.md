@@ -1,6 +1,6 @@
 # Resume
 
-This repository contains source code of my personal resume. [Check here!](kfalkiewicz.github.io)
+This repository contains source code of my personal resume. [Check here!](https://kfalkiewicz.github.io/resume/)
 
 ## Technologies
 
