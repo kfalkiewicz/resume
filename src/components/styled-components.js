@@ -51,6 +51,8 @@ export const Container = styled.main`
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: ${props => props.theme.spacing.base};
+  grid-row-gap: ${props => props.theme.spacing.base};
   grid-template-areas:
     'about experience'
     'education experience'
@@ -58,8 +60,6 @@ export const Content = styled.div`
     'contact experience'
     'consent experience'
     '. experience';
-  grid-column-gap: ${props => props.theme.spacing.base};
-  grid-row-gap: ${props => props.theme.spacing.base};
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
     grid-template-areas:
