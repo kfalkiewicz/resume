@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import About from '../components/About';
+import Consent from '../components/Consent';
 import Contact from '../components/Contact';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
@@ -32,6 +33,7 @@ export default () => {
             <Education />
             <Skills />
             <Contact />
+            <Consent />
           </Content>
         </Container>
       </ThemeProvider>

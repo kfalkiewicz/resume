@@ -23,7 +23,7 @@ const Skill = styled.li`
 
 export default () => {
   const { skills } = usePersonalData();
-  const items = skills.map(skill => <Skill>{skill}</Skill>);
+  const items = skills.map(skill => <Skill key={skill}>{skill}</Skill>);
 
   return (
     <Section title="Skills" gridName="skills">

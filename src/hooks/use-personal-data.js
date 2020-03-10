@@ -28,6 +28,7 @@ const usePersonalData = () => {
             phone
             url
           }
+          consent
         }
       }
     }

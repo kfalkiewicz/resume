@@ -8,7 +8,7 @@
       "startDate": "03.2018",
       "endDate": "",
       "current": true,
-      "description": "I'm a one of many developers recruited by intive. I've worked on different projects for company clients (i.a. Discovery, Heathrow Express, A&E). I've used React.js, Redux, CSS-in-JSS and Vue.js for projects development."
+      "description": "I'm a one of many developers recruited by intive. I've worked on different projects for company clients (i.a. Discovery, Heathrow Express, A&E). I use mostly React.js, Redux, CSS-in-JSS for project development."
     },
     {
       "company": "HRS Group",
@@ -106,5 +106,6 @@
     "email": "nosenation@gmail.com",
     "phone": "+48506-943-762",
     "url": "https://www.linkedin.com/in/karolf"
-  }
+  },
+  "consent": "I hereby give consent for my personal data to be processed for the purpose of conducting recruitment for the position for which I am applying."
 }
