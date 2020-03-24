@@ -29,6 +29,7 @@ const usePersonalData = () => {
             url
           }
           consent
+          consentFull
         }
       }
     }
