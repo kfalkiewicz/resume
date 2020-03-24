@@ -33,7 +33,7 @@ export default () => {
             <Education />
             <Skills />
             <Contact />
-            <Consent />
+            <Consent isFull />
           </Content>
         </Container>
       </ThemeProvider>

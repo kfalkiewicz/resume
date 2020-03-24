@@ -11,12 +11,12 @@ const Statement = styled.p`
   text-align: justify;
 `;
 
-export default () => {
-  const { consent } = usePersonalData();
+export default ({ isFull }) => {
+  const { consent, consentFull } = usePersonalData();
 
   return (
     <Wrapper>
-      <Statement>{consent}</Statement>
+      <Statement>{isFull ? consentFull : consent}</Statement>
     </Wrapper>
   );
 };
